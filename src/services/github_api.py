@@ -19,10 +19,8 @@ class GitHubApi:
     def get_jobs(self):
         urls = []
         for issue in self.issues:
-            urls.append(issue["url"])
+            urls.append(issue['html_url'])
+            
 
-        print(urls)
-
-
-GitHubApi().get_jobs()
+        return urls
 
