@@ -1,3 +1,3 @@
-# DevSSA Jobs Bot
+# Devs Jobs Bot
 
-Bot no telegram para informar as vagas para desenvolvedores e afins em Salvador/BA
+Bot no telegram para informar as vagas para desenvolvedores.
