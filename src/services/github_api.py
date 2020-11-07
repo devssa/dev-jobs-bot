@@ -1,20 +1,23 @@
+import sys
+sys.path.append("..")
+
 import requests
 import json
-from urllib.parse import urljoin
 from datetime import date
+
+import env
 
 class GitHubApi:
     def __init__(self):
-        self.base_url = 'https://api.github.com/repos/devssa/onde-codar-em-salvador/'
+        self.url = env.COMMUNITY_GH_API_ISSUES
         self.issues = []
-
         self.api_issues()
 
     def api_issues(self):
-        url = urljoin(self.base_url, 'issues')
-        response = requests.get(url)
+        response = requests.get(self.url)
         data = json.loads(response.content)
         self.issues = data
+
     def get_jobs(self):
         urls = []
         today = date.today().strftime('%Y-%m-%d')

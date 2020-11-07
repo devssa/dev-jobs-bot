@@ -1,9 +1,8 @@
 import telebot
-from env import TOKEN
+import env
 from services.github_api import GitHubApi
-from messages.msgs import about_msg, not_jobs_msg
 
-bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot(env.TOKEN)
 bot.remove_webhook()
 
 @bot.message_handler(commands=['jobs'])
@@ -16,14 +15,14 @@ def send_jobs(message):
     else:
         bot.send_message(
             message.chat.id,
-            not_jobs_msg,
+            env.NOT_JOBS_MSG,
             disable_web_page_preview=True,
         )
 
 
 @bot.message_handler(commands=['about'])
 def about_me(message):
-    bot.send_message(message.chat.id, about_msg)
+    bot.send_message(message.chat.id, env.ABOUT_MSG)
 
 
 if __name__ == '__main__':
