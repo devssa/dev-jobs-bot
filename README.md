@@ -42,7 +42,7 @@ Os comandos são auto-explicativos, certo? Preferi utilizar o inglês por conven
 
 ## Agradecimentos 
 
-Algumas módulos de código aberto foram utilizadas neste projeto, é sempre bom fazer uma referência a quem facilita nosso dia-a-dia e contribui direta ou indiretamente para um mundo melhor.
+Alguns módulos de código aberto foram utilizadas neste projeto, é sempre bom fazer uma referência a quem facilita nosso dia-a-dia e contribui direta ou indiretamente para um mundo melhor.
 
 * <a href="https://github.com/eternnoir/pyTelegramBotAPI">pyTelegramBotAPI</a>: fácil de usar, prático, poderoso e... pythônico (todos os metódos em snake_case, isso é poesia para mim).
 * <a href="https://github.com/psf/requests">requests</a>: aquele módulo _massa_ pra quem quer fazer scraping, consumir APIs ou só tem preguiça de aprender o urllib, mesmo ele sendo mais rápido hahaha.
