@@ -13,6 +13,7 @@ class GitHubApi:
         self.url = env.COMMUNITY_GH_API_ISSUES
         self.issues = []
         self.api_issues()
+        self.status_code = 0
 
     def api_issues(self):
         response = requests.get(self.url)
