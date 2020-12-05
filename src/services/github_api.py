@@ -1,4 +1,7 @@
 import sys
+
+from requests import api
+from requests import status_codes
 sys.path.append("..")
 
 import requests
@@ -12,13 +15,23 @@ class GitHubApi:
     def __init__(self):
         self.url = env.COMMUNITY_GH_API_ISSUES
         self.issues = []
-        self.api_issues()
-        self.status_code = 0
+        self.status = self.api_issues()
 
     def api_issues(self):
         response = requests.get(self.url)
-        data = json.loads(response.content)
-        self.issues = data
+        if (response.status_code <= 300):
+            data = json.loads(response.content)
+            self.issues = data
+
+        elif (response.status_code > 300 and response.status_code < 500):
+            self.issues.append('Client-Side Error')
+            return 200
+
+        elif (response.status_code >= 500):
+            self.issues.append('Server-side error')
+            return 200
+
+        return response.status_code
 
     def get_jobs(self):
         urls = []
