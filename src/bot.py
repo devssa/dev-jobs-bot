@@ -17,7 +17,7 @@ def send_jobs(message):
         bot.send_message(
             message.chat.id,
             msg.NOT_JOBS_MSG,
-            disable_web_page_preview=True,
+            disable_web_page_preview=None,
         )
 
 
