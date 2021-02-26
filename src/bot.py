@@ -2,6 +2,7 @@ import telebot
 import env
 from services.github_api import GitHubApi
 from msgs import bot_msgs as msg
+from random import choice
 
 bot = telebot.TeleBot(env.TOKEN)
 bot.remove_webhook()
@@ -34,17 +35,31 @@ def get_last_jobs(message):
             range_jobs = int(num_jobs[1])
             if (range_jobs <= 10 and range_jobs != 0):
                 jobs = GitHubApi().last_jobs(range_jobs)
-                bot.send_message(message.chat.id, jobs, disable_web_page_preview=True)
+                bot.send_message(
+                    message.chat.id,
+                    jobs,
+                    disable_web_page_preview=True
+                )
             else:
                 raise ValueError
 
         except ValueError:
             bot.send_message(message.chat.id, 'Informe um valor entre 1 e 10')
-    else:
-        jobs = GitHubApi().last_jobs()
-        bot.send_message(message.chat.id, jobs, disable_web_page_preview=True)
+            bot.send_message(
+                message.chat.id,
+                jobs,
+                disable_web_page_preview=True
+            )
+
+
+@bot.message_handler(commands=['hint'])
+def get_hint(message):
+    bot.send_message(
+        message.chat.id,
+        choice(msg.HINTS_MSG),
+        disable_web_page_preview=True
+    )
 
 
 if __name__ == '__main__':
     bot.polling()
-
