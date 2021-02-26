@@ -25,12 +25,12 @@ HINTS_MSG = [
 
     '"Seja curiosa(o) e esteja preparada(o) para estar sempre estudando'\
     ' algo novo."\n'\
-    '— Elisete Vidotti\n'\
-    'Github: https://github.com/lizvidotti91',
+    '— Elisete Vidotti\n\n'\
+    'Github: lizvidotti91',
 
     '"Estudar sempre e persistência!"\n'\
-    '— Jailton Dantas\n'\
-    'GitHub: github.com/jndantas',
+    '— Jailton Dantas\n\n'\
+    'GitHub: jndantas',
 
     '"Crie um currículo com um objetivo bem definido. '\
     'Por exemplo: back-end Java, front-end React"\n'\
@@ -54,6 +54,10 @@ HINTS_MSG = [
     '— Anônimo',
 
     '"Trabalhar nas soft-skills para mim é algo muito importante."\n'\
-    '— Anônimo'
+    '— Anônimo',
+
+    '"Estude SQL."\n'\
+    '— David Meth\n\n'\
+    'Github Linkedin: me42th'
 ]
 

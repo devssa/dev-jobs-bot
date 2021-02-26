@@ -9,6 +9,7 @@ license = "MIT"
 python = "^3.8"
 requests = "^2.25.0"
 pyTelegramBotAPI = "^3.7.4"
+schedule = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
 pylint = "^2.6.0"
