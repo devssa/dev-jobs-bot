@@ -18,4 +18,42 @@ Site: {env.COMMUNITY_SITE}
 GitHub: {env.COMMUNITY_GH}
 '''
 
+HINTS_MSG = [
+    '"Foque numa tecnologia e fique bom nela, '\
+    'evite ficar pulando de uma tecnologia para outra."\n'\
+    '— João Paulo',
+
+    '"Seja curiosa(o) e esteja preparada(o) para estar sempre estudando'\
+    ' algo novo."\n'\
+    '— Elisete Vidotti\n'\
+    'Github: https://github.com/lizvidotti91',
+
+    '"Estudar sempre e persistência!"\n'\
+    '— Jailton Dantas\n'\
+    'GitHub: github.com/jndantas',
+
+    '"Crie um currículo com um objetivo bem definido. '\
+    'Por exemplo: back-end Java, front-end React"\n'\
+    '— Anônimo',
+
+    '"Git, inglês, e lógica de programação"\n'\
+    '— Anônimo',
+
+    '"Escolha aprender o básico de linguagens mainstream, e que tem bastante '\
+    'mercado (tipo Javascript e PHP), aprende a fazer um pouco de tudo, '\
+    'criar api, aprender um pouco de frontend, e se joga!\n'\
+    '— Anônimo',
+
+    '"Foco, acima de tudo, foco em seus objetivos!"\n'\
+    '— Anônimo',
+
+    '"Ame programação, sem amor você não dura muito nessa área"\n'\
+    '— Anônimo',
+
+    '"Tenha um portifólio no Github"\n'\
+    '— Anônimo',
+
+    '"Trabalhar nas soft-skills para mim é algo muito importante."\n'\
+    '— Anônimo'
+]
 
