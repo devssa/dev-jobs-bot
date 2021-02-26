@@ -37,6 +37,7 @@ Copie esses comandos e insira na seção de comandos do bot, esta etapa é respo
 jobs - Verifique as vagas lançadas hoje!
 last - Configura as últimas dez vagas
 about - Sobre este bot
+hint - Dicas da comunidade
 ```
 Os comandos são auto-explicativos, certo? Preferi utilizar o inglês por convenção, se tiver algo contra... o Tio Sam vai bater na sua porta! Brincadeira, é só forkar e fazer o que você quiser hahahahaha.
 
